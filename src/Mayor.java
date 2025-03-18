@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Mayor {
     public static void main(String[] args) {
+        //permite la entrada
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingresa el primer número: ");

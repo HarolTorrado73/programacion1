@@ -7,7 +7,7 @@ public class ContadorPares {
                 contador++;
             }
         }
-
+//cantidad de numero desde 1 al 100
         System.out.println("La cantidad de números pares entre 1 y 100 es: " + contador);
     }
 }
