@@ -42,11 +42,16 @@ public class ejercicioGrupal {
             double promedioNotas = sumaNotas / numeroAsignaturas;
 
             // Determinar estado de aprobación
-            String estado = (promedioNotas >= promedioMinimoAprobacion) ? "Aprobado" : "Reprobado";
+            String estado;
+            if (promedioNotas >= promedioMinimoAprobacion) {
+                estado = "Aprobado";
+            } else {
+                estado = "Reprobado";
+            }
 
             // Imprimir reporte
-            System.out.printf("%s (ID: %s) - Promedio: %.2f - Estado: %s%n",
-                    nombresEstudiantes[i], identificacionesEstudiantes[i], promedioNotas, estado);
+            System.out.println(nombresEstudiantes[i] + " (ID: " + identificacionesEstudiantes[i] + 
+                    ") - Promedio: " + String.format("%.2f", promedioNotas) + " - Estado: " + estado);
         }
 
         input.close(); // Cerramos el escáner
