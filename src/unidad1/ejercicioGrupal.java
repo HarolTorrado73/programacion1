@@ -20,7 +20,7 @@ public class ejercicioGrupal {
             System.out.println("Ingrese el nombre del estudiante " + (i + 1) + ":");
             nombresEstudiantes[i] = input.nextLine();
 
-            System.out.println("Ingrese la identificación del estudiante " + (i + 1) + ":");
+            System.out.println("Ingrese la identificacion del estudiante " + (i + 1) + ":");
             identificacionesEstudiantes[i] = input.nextLine();
 
             System.out.println("Ingrese las " + numeroAsignaturas + " notas del estudiante " + (i + 1) + ":");
